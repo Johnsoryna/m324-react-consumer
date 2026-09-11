@@ -1,7 +1,7 @@
 // ============================================================================
 // Package des Lernpartners: @samusn/react-card-package (GitHub Packages)
 //
-// Installation (Registry-Zuordnung steht in .npmrc, Token kommt aus GITHUB_TOKEN):
+// Installiert mit (Registry-Zuordnung steht in .npmrc, Token kommt aus GITHUB_TOKEN):
 //     $env:GITHUB_TOKEN = gh auth token          (PowerShell)
 //     npm install @samusn/react-card-package@1.0.0
 //
@@ -9,17 +9,8 @@
 // title, image, style und children.
 // ============================================================================
 
-// TODO nach der Installation einkommentieren:
-// import { Card } from '@samusn/react-card-package'
+import { Card } from '@samusn/react-card-package'
 import HorizontalBarGraph from '@johnsoryna/mybargraph'
-
-// Platzhalter, bis das Package installiert ist. Danach: Card aus dem Package verwenden.
-const Card = ({ title, children, style }) => (
-  <div className="placeholder" style={style}>
-    <strong>{title}</strong>
-    <div>{children}</div>
-  </div>
-)
 
 export default function PartnerDemo() {
   return (
