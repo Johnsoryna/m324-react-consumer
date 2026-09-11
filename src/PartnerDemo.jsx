@@ -1,28 +1,28 @@
 // ============================================================================
-// TODO Lernpartner: Package des Lernpartners einbinden
+// Package des Lernpartners: @samusn/react-card-package (GitHub Packages)
 //
-// 1. Im Terminal installieren:
-//        npm install @PARTNER/PAKETNAME
-// 2. Die Komponente hier importieren (Name gemäss README des Packages):
-//        import PartnerKomponente from '@PARTNER/PAKETNAME'
-// 3. Unten im JSX die Zeile mit <PartnerKomponente ... /> einkommentieren
-//    und die Props gemäss README des Partners setzen.
-// 4. Den Platzhalter-Text entfernen.
+// Installation (Registry-Zuordnung steht in .npmrc, Token kommt aus GITHUB_TOKEN):
+//     $env:GITHUB_TOKEN = "<PAT mit read:packages>"      (PowerShell)
+//     npm install @samusn/react-card-package@1.0.0
+//
+// Danach den Import unten einkommentieren und die Komponente gemäss README
+// des Partners mit den passenden Props verwenden.
 // ============================================================================
 
-// import PartnerKomponente from '@PARTNER/PAKETNAME'
+// import Card from '@samusn/react-card-package'
 
 export default function PartnerDemo() {
   return (
     <section className="card">
-      <h2>Package vom Lernpartner</h2>
+      <h2>Package vom Lernpartner: @samusn/react-card-package</h2>
       <p className="placeholder">
-        Hier wird die Komponente aus dem Package des Lernpartners angezeigt.
+        Registry: GitHub Packages (npm.pkg.github.com), Zuordnung in <code>.npmrc</code>.
         <br />
-        Noch offen: <code>npm install @PARTNER/PAKETNAME</code> und Import in{' '}
+        Noch offen: Lesezugriff auf das private Package, dann{' '}
+        <code>npm install @samusn/react-card-package@1.0.0</code> und Import in{' '}
         <code>src/PartnerDemo.jsx</code>.
       </p>
-      {/* <PartnerKomponente /> */}
+      {/* <Card title="Beispiel" /> */}
     </section>
   )
 }
